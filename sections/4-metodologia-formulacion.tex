@@ -1,0 +1,32 @@
+% =====================================================================
+% 4. METODOLOGÍA Y FORMULACIÓN
+% Qué incluir y cómo evaluarlo:
+% - Datos/escenarios: define dataset sintético, supuestos y número de sensores.
+% - FIS: universos, funciones de pertenencia (MFs), reglas, defuzzificación.
+% - PSO: codificación de partículas, límites, función objetivo con penalizaciones.
+% - HC: distancia, linkage (p. ej., Ward), umbral de corte, extracción de stats.
+% - Métricas: define fórmulas; ej. mejora % = (orig - opt)/orig.
+% Evidencia: enlaza con figuras `fuzzy_membership.png`, `pso_curve.png`, `hierarchical_clustering.png`.
+% =====================================================================
+% 4-metodologia-formulacion.tex
+\section{Metodología y formulación}\label{sec:metodologia}
+
+\subsection{Modelo de datos y escenarios}\label{subsec:meto-datos}
+% Datos sintéticos por sensor (índice de sensor como eje canónico); supuestos y generación.
+
+\subsection{FIS de congestión: MFs, reglas y defuzzificación}\label{subsec:meto-fis}
+% Define universos, MFs (4), operadores, inferencia y defuzzificación.
+% Inserta `images/fuzzy_membership.png` y referencia cada MF.
+
+\subsection{PSO para tiempos semafóricos}\label{subsec:meto-pso}
+% Codificación de partículas, límites min/max de verde/rojo, restricciones de ciclo.
+% Función objetivo: minimizar congestión agregada con penalizaciones por restricciones.
+% Inserta `images/pso_curve.png`; explica interpretación del paisaje de fitness.
+
+\subsection{Clustering jerárquico (HC) sobre salida crisp}\label{subsec:meto-hc}
+% Distancia, linkage (Ward), umbral de disimilitud; cómo se obtienen stats por cluster.
+% Inserta `images/hierarchical_clustering.png`.
+
+\subsection{Métricas de evaluación}\label{subsec:meto-metricas}
+% Define explícitamente: índice de congestión, % de mejora ((orig - opt)/orig),
+% consistencia (correlación orig vs opt), y viabilidad (respeto a tiempos).

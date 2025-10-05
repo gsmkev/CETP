@@ -1,0 +1,31 @@
+% =====================================================================
+% 3. ARQUITECTURA DEL SISTEMA
+% Qué incluir y cómo evaluarlo:
+% - Diagrama de alto nivel: módulos (FIS, PSO, HC, UI, almacenamiento) y flujos de datos.
+% - Contratos de I/O: qué datos produce/consume cada módulo y formatos.
+% - Puntos de verificación: dónde se generan hashes/artefactos verificables.
+% - UI: vistas clave y cómo disparan el pipeline.
+% Evidencia: referencia a figuras `arquitectura.pdf` y `frontend_interface.png`.
+% =====================================================================
+% 3-arquitectura-sistema.tex
+\section{Arquitectura del sistema}\label{sec:arquitectura}
+
+\subsection{Visión de alto nivel}\label{subsec:arch-highlevel}
+% Describe módulos y contratos. Inserta la figura `images/arquitectura.pdf`.
+
+\subsection{Módulo de inferencia difusa (FIS)}\label{subsec:arch-fis}
+% Entradas (p.ej. densidad/flujo/velocidad simulada), MFs, reglas, salida crisp de congestión.
+
+\subsection{Módulo de optimización (PSO)}\label{subsec:arch-pso}
+% Partícula = tiempos semafóricos; evaluación contra FIS; realimentación de impacto.
+
+\subsection{Módulo de análisis (HC)}\label{subsec:arch-hc}
+% Clustering 1D sobre salida crisp; stats de clusters para reporting.
+
+\subsection{UI y visual analytics}\label{subsec:arch-ui}
+% Interfaz: selección de gráfico y ejecución con datos sintéticos (Chart.js).
+% Inserta la figura `images/frontend_interface.png`.
+
+\subsection{Almacenamiento verificable y registro de ejecuciones}\label{subsec:arch-storage}
+% Esquema de almacenamiento: IoI, metadatos de corrida, hashes/verificación.
+% Indica en qué etapas se calculan/guardan y cómo se validan.

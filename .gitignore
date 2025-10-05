@@ -1,0 +1,42 @@
+# LaTeX intermediate/build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.xdy
+*.lol
+*.nav
+*.snm
+*.vrb
+*.thm
+*.xdv
+*.glsdefs
+
+# Common build dirs
+build/
+_build/
+dist/
+
+# Editor/OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/

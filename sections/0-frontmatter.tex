@@ -1,0 +1,25 @@
+% =====================================================================
+% 0. FRONT MATTER: LISTAS Y ACRÓNIMOS
+% Propósito: listas de figuras/tablas e impresión de acrónimos.
+% Requiere: \usepackage[acronym]{glossaries} y \makeglossaries en el preámbulo.
+% =====================================================================
+% 0-frontmatter.tex
+\section*{Listas y acrónimos}
+\addcontentsline{toc}{section}{Listas y acrónimos}
+
+\subsection*{Lista de Figuras}
+\addcontentsline{toc}{subsection}{Lista de Figuras}
+\listoffigures
+
+\subsection*{Lista de Tablas}
+\addcontentsline{toc}{subsection}{Lista de Tablas}
+\listoftables
+
+\subsection*{Acrónimos y Siglas}
+\addcontentsline{toc}{subsection}{Acrónimos y Siglas}
+\printglossary[type=\acronymtype]
+
+\newacronym{fis}{FIS}{Sistema de Inferencia Difusa}
+\newacronym{pso}{PSO}{Optimización por Enjambre de Partículas}
+\newacronym{hc}{HC}{Clustering Jerárquico}
+\newacronym{mf}{MF}{Función de Pertenencia}

@@ -1,0 +1,104 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage[acronym]{glossaries}
+\makeglossaries
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+% =====================================================================
+%                              METADATOS
+%  Qué cuidar aquí:
+%  - Título preciso (incluye palabras clave del enfoque y dominio).
+%  - Autoría y afiliación con tildes correctas; correo institucional.
+%  - Financiación: menciona CONACYT/FEEI y apoyos académicos (FIUNA).
+% =====================================================================
+\title{Optimización escalable y descentralizada del tráfico urbano con almacenamiento verificable para despliegues en ciudades inteligentes \\
+\thanks{Este trabajo es cofinanciado por el Consejo Nacional de Ciencia y Tecnología (CONACYT) con el apoyo del FEEI. Se agradece el respaldo técnico y académico de la Facultad de Ingeniería de la Universidad Nacional de Asunción (FIUNA).}}
+
+\author{\IEEEauthorblockN{Kevin M. Galeano}
+\IEEEauthorblockA{\textit{Facultad Politecnica} \\
+\textit{Universidad Nacional de Asunción}\\
+Asunción, Paraguay \\
+gsmkev@gmail.com}
+}
+
+\maketitle
+
+% =====================================================================
+%                                RESUMEN
+%  Contenido mínimo (150–250 palabras):
+%  - Problema y por qué importa (1–2 oraciones)
+%  - Enfoque: FIS + PSO + HC + almacenamiento verificable (2–3)
+%  - Configuración experimental (sensores, datos sintéticos) (1–2)
+%  - Resultados con números (mejora %, consistencia, viabilidad) (2–3)
+%  - Conclusión y aporte práctico (1)
+%  Escribe este bloque al final cuando ya tengas resultados consolidados.
+% =====================================================================
+\begin{abstract}
+% (Rellenar al final)
+\end{abstract}
+
+% =====================================================================
+%                             PALABRAS CLAVE
+%  4–6 términos separados por comas. Incluye: congestión, FIS, PSO, HC,
+%  ciudades inteligentes, almacenamiento verificable (ajustar a tu foco).
+% =====================================================================
+\begin{IEEEkeywords}
+% (Rellenar al final)
+\end{IEEEkeywords}
+
+% =====================================================================
+%                     FRONT MATTER (LISTAS + ACRÓNIMOS)
+%  Imprime listas de figuras/tablas y acrónimos.
+%  Requiere: \usepackage[acronym]{glossaries} y \makeglossaries.
+%  Nota: compilar al menos 2 veces (o ejecutar makeglossaries) para refrescar.
+% =====================================================================
+\input{sections/0-frontmatter.tex}
+
+% =====================================================================
+%                              CUERPO DE LA TESIS
+%  Qué debe entregar cada sección (resumen ejecutivo):
+%  - 1: Problema/objetivos trazables a métricas; contribuciones concretas.
+%  - 2: Estado del arte conectado con tus decisiones metodológicas.
+%  - 3: Diagrama y contratos de I/O; puntos de verificación (hashes).
+%  - 4: Definiciones formales + fórmulas de métricas; figuras FIS/PSO/HC.
+%  - 5: Estructura de código, parámetros y flujo; UI y gráficos.
+%  - 6: Diseño, setup, resultados con cifras y lectura de gráficos.
+%  - 7: Integración FIS→PSO→HC y lectura operativa por clusters.
+%  - 8: Conclusiones ligadas a objetivos y líneas de futuro.
+% =====================================================================
+\input{sections/1-introduccion.tex}
+\input{sections/2-antecedentes-relacionados.tex}
+\input{sections/3-arquitectura-sistema.tex}
+\input{sections/4-metodologia-formulacion.tex}
+\input{sections/5-implementacion.tex}
+\input{sections/6-experimentos-resultados.tex}
+\input{sections/7-integracion-analisis.tex}
+\input{sections/8-conclusiones-futuro.tex}
+
+% =====================================================================
+%                             AGRADECIMIENTOS
+%  Reconoce financiación (CONACYT/FEEI), direcciones/mentores y apoyos técnicos.
+%  Usa \section* para no numerar y agrégalo al índice si lo deseas.
+% =====================================================================
+\input{sections/9-agradecimientos.tex}
+
+% =====================================================================
+%                               BIBLIOGRAFÍA
+%  Estilo IEEEtran y base references.bib.
+%  Recuerda: compila LaTeX → BibTeX → LaTeX → LaTeX para resolver citas.
+% =====================================================================
+\nocite{*}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
