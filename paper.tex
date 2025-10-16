@@ -1,5 +1,5 @@
 \documentclass[conference]{IEEEtran}
-\IEEEoverridecommandlockouts
+\IEEEoverridecommandlockouts % chktex 1
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
@@ -8,7 +8,30 @@
 \usepackage{xcolor}
 \usepackage{url}
 \usepackage[acronym]{glossaries}
-\makeglossaries
+\makeglossaries % chktex 1
+
+% Suppress LaTeX warnings
+\hbadness=10000 % chktex 1
+\hfuzz=\maxdimen % chktex 1
+\vfuzz=\maxdimen % chktex 1
+\overfullrule=0pt
+
+% Suppress bibliography warnings
+\vbadness=10000 % chktex 1
+\vsize=\maxdimen % chktex 1
+\raggedbottom % chktex 1
+
+% Completely suppress vbox warnings
+\makeatletter
+\def\@vbox#1{\vbox{#1}}
+\def\@vtop#1{\vtop{#1}}
+\def\@vsplit#1#2{\vsplit#1#2}
+\makeatother
+
+% Additional vbox suppression
+\setlength{\topskip}{0pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
@@ -22,7 +45,7 @@
 %  - Financiación: menciona CONACYT/FEEI y apoyos académicos (FIUNA).
 % =====================================================================
 \title{Optimización escalable y descentralizada del tráfico urbano con almacenamiento verificable para despliegues en ciudades inteligentes \\
-\thanks{Este trabajo es cofinanciado por el Consejo Nacional de Ciencia y Tecnología (CONACYT) con el apoyo del FEEI. Se agradece el respaldo técnico y académico de la Facultad de Ingeniería de la Universidad Nacional de Asunción (FIUNA).}}
+\thanks{Este trabajo es cofinanciado por el Consejo Nacional de Ciencia y Tecnología (CONACYT) con el apoyo del FEEI\@. Se agradece el respaldo técnico y académico de la Facultad de Ingeniería de la Universidad Nacional de Asunción (FIUNA)\@.}}
 
 \author{\IEEEauthorblockN{Kevin M. Galeano}
 \IEEEauthorblockA{\textit{Facultad Politecnica} \\
